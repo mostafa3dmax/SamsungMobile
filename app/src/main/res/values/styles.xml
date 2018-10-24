@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+<style name="editBox" >
+    <item name="android:backgroundDimEnabled">true</item>
+</style>
+    <style name="myButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorMyBlue</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorWhit</item>
+    </style>
+    <style name="myButton2" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorSky</item>
+        <item name="android:textColor">@color/colorBrown</item>
+
+    </style>
+    <style name="editTextStyle" parent="Theme.AppCompat.Light">
+        <item name="editTextStyle">@color/colorSky</item>
+        <item name="editTextColor">@android:color/black</item>
+    </style>
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_bg</item>
+    </style>
+</resources>

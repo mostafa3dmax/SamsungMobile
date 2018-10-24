@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    >
+<LinearLayout
+    android:id="@+id/work_header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true"
+
+    >
+    <TextView
+        android:id="@+id/work_row_number"
+        android:layout_weight="10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layoutDirection="rtl"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="ردیف"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+    <TextView
+        android:id="@+id/work_forosh"
+        android:layout_width="0dp"
+        android:layout_weight="15"
+        android:textAlignment="center"
+        android:layoutDirection="rtl"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="10sp"
+        android:layout_height="wrap_content"
+        android:text="قیمت"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+    <TextView
+        android:id="@+id/work_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:textAlignment="center"
+        android:layoutDirection="rtl"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="10sp"
+        android:text="موضوع"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+    <TextView
+        android:id="@+id/work_tozihat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:layoutDirection="rtl"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        android:text="توضیحات"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+    <TextView
+        android:id="@+id/work_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:layoutDirection="rtl"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="10sp"
+        android:textAlignment="center"
+
+        android:text="تاریخ"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+    <TextView
+        android:id="@+id/work_kharid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layoutDirection="rtl"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="10sp"
+        android:layout_weight="15"
+        android:text="خرید" />
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="smartdevelopers.ir.hesabdari.samsungmobile.WorkResultSelectorActivity">
+<Spinner
+    android:id="@+id/work_result_selector_username"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layoutDirection="ltr"
+    android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/work_result_selector_dated"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_result_selector_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/show_dated_result"
+        style="@android:style/Widget.Button.Small"/>
+    <Button
+        android:id="@+id/work_result_selector_thisMounth"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_result_selector_dated"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/show_mounted_result"
+        style="@android:style/Widget.Button.Small"/>
+    <Button
+        android:id="@+id/work_result_selector_show_all"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_result_selector_thisMounth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/show_all_result"
+        style="@android:style/Widget.Button.Small"/>
+</RelativeLayout>

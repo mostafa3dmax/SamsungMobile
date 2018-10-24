@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "5815786744",
+    "firebase_url": "https://samsungmobile-1.firebaseio.com",
+    "project_id": "samsungmobile-1",
+    "storage_bucket": "samsungmobile-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5815786744:android:dbb90d7dcb97c558",
+        "android_client_info": {
+          "package_name": "smartdevelopers.ir.hesabdari.samsungmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5815786744-jeege7u2rrv89b08q67crnrtad4tnft2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZTv_g4pCW3h6zsIipdFGjIutvmofb26o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

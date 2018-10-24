@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<item android:id="@+id/show_working_result"
+    android:title="@string/show_working_title"
+
+    />
+    <item android:id="@+id/password_setting"
+        android:title="@string/password_setting_title"/>
+</menu>

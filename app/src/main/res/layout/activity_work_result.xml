@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context="smartdevelopers.ir.hesabdari.samsungmobile.WorkResultActivity">
+
+    <include
+        android:id="@+id/work_header"
+
+        layout="@layout/work_header_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/work_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/work_header"
+        />
+
+    <ImageView
+        android:id="@+id/work_result_filter_panel_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/work_result_filter_panel_layout"
+        android:layout_alignParentStart="true"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:tint="@color/colorAccent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/work_result_filter_panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0aefff"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/work_result_filter_panel_jobs"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="50"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:paddingStart="15dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/show_sum_all_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/myButton"
+                android:text="@string/show_sum_all_result_text" />
+
+            <Button
+                android:id="@+id/show_sod_of_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/myButton"
+
+                android:text="@string/show_sod_of_result_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/work_result_long_click_layout"
+        style="@style/editBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#a917171a"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/work_result_edit_btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/work_result_delete_btn"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edit_button_ripple"
+            android:elevation="2dp"
+
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/work_result_delete_btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edit_button_ripple"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="2dp"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/work_result_cancel_btn"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/work_result_delete_btn"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edit_button_ripple"
+            android:elevation="2dp"
+
+            android:text="@string/cancel" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

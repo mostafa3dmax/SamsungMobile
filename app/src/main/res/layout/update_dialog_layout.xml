@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:padding="20dp">
+<TextView
+    android:id="@+id/update_dialog_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/update"
+    android:textStyle="bold"
+    android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/update_dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update_message"
+        android:textSize="16sp"
+        android:layout_below="@id/update_dialog_title"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:id="@+id/update_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/update_dialog_message"
+        android:layout_marginTop="25dp">
+        <Button
+            android:id="@+id/update_dialog_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_weight="50"
+            android:theme="@style/myButton"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"/>
+        <Button
+            android:id="@+id/update_dialog_ok_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:layout_weight="50"
+            android:theme="@style/myButton2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

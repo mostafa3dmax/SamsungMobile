@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context="smartdevelopers.ir.hesabdari.samsungmobile.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/user_selector_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:id="@+id/user_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_marginStart="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+
+            android:layout_marginTop="20dp"/>
+        <Spinner
+            android:id="@+id/user_job_selector"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp"
+            style="@style/SpinnerTheme"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_selector_layout"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date_view"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:background="@drawable/date_bg_selector"
+            android:gravity="center"
+            android:layout_weight="70"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+
+            android:labelFor="@id/date_view"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:text="@string/date"
+
+            />
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/tozihat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/date_layout"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/editText_tozihat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:lines="1"
+        android:inputType="text"
+        android:backgroundTint="@color/colorSky"
+        android:layout_weight="70"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:labelFor="@id/editText_tozihat"
+        android:textSize="18sp"
+        android:layout_marginRight="10dp"
+        android:text="توضیحات"
+        android:layout_alignParentRight="true"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/kharid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tozihat_layout"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/editText_kharid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+
+            android:inputType="number"
+            android:backgroundTint="@color/colorSky"
+            android:layout_weight="70"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:labelFor="@id/editText_kharid"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:text="هزینه خرید"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/forosh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kharid_layout"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText_forosh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:lines="1"
+            android:inputType="number"
+            android:backgroundTint="@color/colorSky"
+            android:layout_weight="70"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:labelFor="@id/editText_forosh"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:text="قیمت فروش"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forosh_layout"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:theme="@style/myButton2"
+        android:text="ذخیره"/>
+
+</RelativeLayout>
